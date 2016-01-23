@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Your contacts JSON file</h1>
-  <input type="file" on-read-file="showContent($fileContent)" />
+  <input type="file" on-read-file="addContent($fileContent)" />
   <div ng-if="content">
     <h3>File content is:</h2>
       <pre>{{ content }}</pre>

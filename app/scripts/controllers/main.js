@@ -14,6 +14,13 @@ angular.module('xavierContactApp')
       $scope.contacts = contacts;
     });
 
+    $scope.addContent = function(fileContent) {
+      var list_contact = JSON.parse(fileContent);
+
+      list_contact.forEach(function(contact) {
+        Contacts.addContact(contact);
+      });
+    }
     $scope.deleteContact = function(id){
       Contacts.deleteContact(id);
     };
