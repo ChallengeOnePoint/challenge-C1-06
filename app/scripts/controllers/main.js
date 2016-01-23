@@ -8,7 +8,7 @@
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
-  .controller('MainCtrl', function () {
+  .controller('MainCtrl', function ($scope) {
     $scope.showContent = function($fileContent){
         $scope.content = $fileContent;
     };
