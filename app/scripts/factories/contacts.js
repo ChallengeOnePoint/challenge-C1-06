@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name xavierContactApp.directive:onReadFile
+ * @name xavierContactApp.directive:Contacts
  * @description
- * # onReadFile
+ * # Contacts
  * Controller of the xavierContactApp
  */
 

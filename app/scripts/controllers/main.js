@@ -8,7 +8,7 @@
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
-  .controller('MainCtrl', function ($scope, Contacts) {
+  .controller('MainCtrl', function ($scope, Contacts, Geocoder) {
 
     Contacts.getContacts().$loaded().then(function(contacts) {
       $scope.contacts = contacts;
