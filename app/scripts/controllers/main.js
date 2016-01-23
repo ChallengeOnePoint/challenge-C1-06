@@ -13,6 +13,11 @@ angular.module('xavierContactApp')
     Contacts.getContacts().$loaded().then(function(contacts) {
       $scope.contacts = contacts;
     });
+
+    $scope.deleteContact = function(id){
+      Contacts.deleteContact(id);
+    };
+
     /*Contacts.addContact({
       "number":"123",
       "street":"Rue Du Faubourg Saint-Martin",

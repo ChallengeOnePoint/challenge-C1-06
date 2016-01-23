@@ -17,6 +17,6 @@ angular.module('xavierContactApp')
     $scope.save = function(){
       $scope.contact.$save().then(function(){
         alert("Contact saved :)");
-      })
+      });
     };
   });

@@ -22,6 +22,10 @@ angular.module('xavierContactApp').factory('Contacts',
       getContact : function(id) {
         var contactRef = new Firebase(FirebaseUrl).child(id);
         return $firebaseObject(contactRef);
+      },
+      deleteContact : function(id) {
+        var contactRef = new Firebase(FirebaseUrl).child(id);
+        contactRef.remove();
       }
     };
     return Contacts;
