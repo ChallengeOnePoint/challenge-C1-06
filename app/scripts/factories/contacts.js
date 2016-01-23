@@ -13,7 +13,7 @@ angular.module('xavierContactApp').factory('Contacts',
     var Contacts = {
       addContact : function(contact){
         var contactsRef = new Firebase(FirebaseUrl);
-        $firebaseArray(contactsRef).$add(contact);
+        return $firebaseArray(contactsRef).$add(contact);
       },
       getContacts : function() {
         var contactsRef = new Firebase(FirebaseUrl);
