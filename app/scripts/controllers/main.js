@@ -18,7 +18,16 @@ angular.module('xavierContactApp')
       var list_contact = JSON.parse(fileContent);
 
       list_contact.forEach(function(contact) {
-        Contacts.addContact(contact);
+        Geocoder.getLocation(
+        contact.number,
+        contact.street,
+        contact.city,
+        contact.postcode
+        )
+        .then(function(position) {
+          contact.position = position;
+          Contacts.addContact(contact);
+        });
       });
     }
     $scope.deleteContact = function(id){
