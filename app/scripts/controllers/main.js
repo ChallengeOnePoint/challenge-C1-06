@@ -13,6 +13,14 @@ angular.module('xavierContactApp')
     Contacts.getContacts().$loaded().then(function(contacts) {
       $scope.contacts = contacts;
     });
+
+    $scope.addContent = function(fileContent) {
+      var list_contact = JSON.parse(fileContent);
+
+      list_contact.forEach(function(contact) {
+        Contacts.addContact(contact);
+      });
+    }
     /*Contacts.addContact({
       "number":"123",
       "street":"Rue Du Faubourg Saint-Martin",
