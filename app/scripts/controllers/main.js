@@ -8,8 +8,17 @@
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.showContent = function($fileContent){
+  .controller('MainCtrl', function ($scope, Contacts) {
+    $scope.contacts = Contacts.getContacts();
+    /*Contacts.addContact({
+      "number":"123",
+      "street":"Rue Du Faubourg Saint-Martin",
+      "city":"Paris 10e Arrondissement",
+      "postcode":"75010",
+      "firstname":"Abbey",
+      "lastname":"Desan"
+    });*/
+    /*$scope.showContent = function($fileContent){
         $scope.content = $fileContent;
-    };
+    };*/
   });
