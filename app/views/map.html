@@ -1,0 +1,7 @@
+<div class="container">
+<ng-map center="[48.85, 2.34]" zoom="5">
+  <div ng-repeat = "x in contacts">
+    <marker ng-if="x.position" position="[{{x.position.lat}}, {{x.position.lng}}]" title="{{x.fullname}} {{x.lastname}}"></marker>
+  </div>
+</ng-map>
+</div>

@@ -8,6 +8,8 @@
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
-  .controller('MapCtrl', function ($scope) {
-
+  .controller('MapCtrl', function ($scope, Contacts) {
+    Contacts.getContacts().$loaded().then(function(contacts) {
+      $scope.contacts = contacts;
+    });
   });
