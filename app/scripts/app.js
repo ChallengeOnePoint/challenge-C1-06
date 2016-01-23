@@ -30,6 +30,11 @@ angular
         controller: 'EditCtrl',
         controllerAs: 'edit'
       })
+      .when('/add', {
+        templateUrl: 'views/add.html',
+        controller: 'AddCtrl',
+        controllerAs: 'add'
+      })
       .when('/map', {
         templateUrl: 'views/map.html',
         controller: 'MapCtrl',

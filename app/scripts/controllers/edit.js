@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name xavierContactApp.controller:MainCtrl
+ * @name xavierContactApp.controller:EditCtrl
  * @description
- * # MainCtrl
+ * # EditCtrl
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
