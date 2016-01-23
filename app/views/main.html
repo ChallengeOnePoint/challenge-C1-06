@@ -20,6 +20,8 @@
 			<th>Street</th>
 			<th>City</th>
 			<th>Postcode</th>
+			<th>Latitude</th>
+			<th>Longitude</th>
 			<th>Edit</th>
 			<th>Remove</th>
 		</tr>
@@ -31,6 +33,8 @@
 			<td>{{x.street}}</td>
 			<td>{{x.city}}</td>
 			<td>{{x.postcode}}</td>
+			<td>{{x.position.lat}}</td>
+			<td>{{x.position.lng}}</td>
 			<td>
 				<a type="button" class="btn btn-primary btn-xs glyphicon glyphicon-pencil" ng-href="#/edit/{{x.$id}}"></a>
 			</td>
