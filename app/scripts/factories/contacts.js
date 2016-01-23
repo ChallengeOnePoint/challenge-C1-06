@@ -17,11 +17,11 @@ angular.module('xavierContactApp').factory('Contacts',
       },
       getContacts : function() {
         var contactsRef = new Firebase(FirebaseUrl);
-        return $firebaseArray(contactsRef).$loaded();
+        return $firebaseArray(contactsRef);
       },
       getContact : function(id) {
         var contactRef = new Firebase(FirebaseUrl).child(id);
-        return $firebaseObject(contactRef).$loaded();
+        return $firebaseObject(contactRef);
       }
     };
     return Contacts;

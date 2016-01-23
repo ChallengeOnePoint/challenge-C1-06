@@ -9,7 +9,10 @@
  */
 angular.module('xavierContactApp')
   .controller('MainCtrl', function ($scope, Contacts) {
-    $scope.contacts = Contacts.getContacts();
+
+    Contacts.getContacts().$loaded().then(function(contacts) {
+      $scope.contacts = contacts;
+    });
     /*Contacts.addContact({
       "number":"123",
       "street":"Rue Du Faubourg Saint-Martin",
