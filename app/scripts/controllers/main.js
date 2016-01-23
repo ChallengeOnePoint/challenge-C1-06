@@ -9,9 +9,7 @@
  */
 angular.module('xavierContactApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.showContent = function($fileContent){
+        $scope.content = $fileContent;
+    };
   });

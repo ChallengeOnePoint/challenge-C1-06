@@ -1,3 +1,8 @@
-<div class="content">
-  Coucou
+<div class="container">
+  <h1>Your contacts JSON file</h1>
+  <input type="file" on-read-file="showContent($fileContent)" />
+  <div ng-if="content">
+    <h2>File content is:</h2>
+      <pre>{{ content }}</pre>
+  </div>
 </div>
