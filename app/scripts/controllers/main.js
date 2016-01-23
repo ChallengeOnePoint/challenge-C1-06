@@ -21,6 +21,10 @@ angular.module('xavierContactApp')
         Contacts.addContact(contact);
       });
     }
+    $scope.deleteContact = function(id){
+      Contacts.deleteContact(id);
+    };
+
     /*Contacts.addContact({
       "number":"123",
       "street":"Rue Du Faubourg Saint-Martin",

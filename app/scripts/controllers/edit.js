@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name xavierContactApp.controller:MainCtrl
+ * @name xavierContactApp.controller:EditCtrl
  * @description
- * # MainCtrl
+ * # EditCtrl
  * Controller of the xavierContactApp
  */
 angular.module('xavierContactApp')
@@ -17,6 +17,6 @@ angular.module('xavierContactApp')
     $scope.save = function(){
       $scope.contact.$save().then(function(){
         alert("Contact saved :)");
-      })
+      });
     };
   });
