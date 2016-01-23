@@ -38,4 +38,4 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-  }).constant('FirebaseUrl', 'https://xavier-contacts.firebaseio.com/#-J8MVKLed7mTFM6XuvHb|95d1328c44636a8b3e91ea688b87347d');
+  }).constant('FirebaseUrl', 'https://xavier-contacts.firebaseio.com');
