@@ -30,6 +30,11 @@ angular
         controller: 'EditCtrl',
         controllerAs: 'edit'
       })
+      .when('/map', {
+        templateUrl: 'views/map.html',
+        controller: 'MapCtrl',
+        controllerAs: 'map'
+      })
       .otherwise({
         redirectTo: '/'
       });
