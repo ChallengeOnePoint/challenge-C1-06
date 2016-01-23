@@ -4,7 +4,7 @@
  * @ngdoc function
  * @name xavierContactApp.directive:onReadFile
  * @description
- * # MainCtrl
+ * # onReadFile
  * Controller of the xavierContactApp
  */
 
