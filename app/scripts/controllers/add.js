@@ -11,7 +11,7 @@ angular.module('xavierContactApp')
   .controller('AddCtrl', function ($scope, Contacts) {
     $scope.contact = {};
 
-    $scope.add = function(){
+    $scope.addContact = function(){
       Contacts.addContact($scope.contact).then(function(contact) {
         alert("Your contact is added");
       });
