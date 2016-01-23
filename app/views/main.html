@@ -21,6 +21,7 @@
 			<th>City</th> 
 			<th>Postcode</th> 
 			<th>Edit</th> 
+			<th>Remove</th> 
 		</tr> 
 	</thead> 
 	<tbody> 
@@ -33,6 +34,10 @@
 			<td>
 				<a type="button" class="btn btn-primary btn-xs glyphicon glyphicon-pencil" href="#/edit/test"></a>
 			</td> 
+			<td>
+				<a type="button" class="btn btn-danger btn-xs glyphicon glyphicon-remove" ng-click="deleteContact(x.$id)">
+				</a>
+			</td>
 		</tr> 
 	</tbody> 
 </table>
